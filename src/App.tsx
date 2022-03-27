@@ -12,11 +12,22 @@ function importAll(r: any) {
 function App() {
   return (
     <S.Page>
-      <S.ScrollBox>
-        {image.map((img, index) => (
-          <S.ItemBox key={index} img={"img/" + img} />
-        ))}
-      </S.ScrollBox>
+      <div>
+        <label>y</label>
+        <S.ScrollBox mandatory={false}>
+          {image.map((img, index) => (
+            <S.ItemBox key={index} img={"img/" + img} />
+          ))}
+        </S.ScrollBox>
+      </div>
+      <div>
+        <label>y mandatory</label>
+        <S.ScrollBox mandatory={true}>
+          {image.map((img, index) => (
+            <S.ItemBox key={index} img={"img/" + img} />
+          ))}
+        </S.ScrollBox>
+      </div>
     </S.Page>
   );
 }
