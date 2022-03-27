@@ -24,6 +24,7 @@ export const ItemBox = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   scroll-snap-align: center;
 
   background-image: url(${({ img }: { img: string }) => img});
