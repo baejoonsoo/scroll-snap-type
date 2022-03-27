@@ -26,3 +26,38 @@
     - 미지정 상태라면 유저 에이전트에 따른다
   - mandatory
     - 항상 스냅
+
+```css
+scroll-snap-type: x proximity;
+/* X축 스크롤, snap position 유무에 맞춰 스냅 */
+```
+
+<br>
+
+## scroll-snap-align
+
+- nap area 안에서 원하는 정렬 방식을 설정
+
+- none
+
+  - snap position을 지정하지 않음
+
+    <br>
+
+- start
+
+  - 축을 기준으로 snap area의 시작 부분에 맞춰 정렬
+
+    <br>
+
+- end
+
+  - snap area의 끝에 맞춰 정렬
+
+    <br>
+
+- center
+
+  - snap area의 가운데에 맞춰 정렬
+
+    <br>
